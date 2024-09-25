@@ -21,8 +21,8 @@ document.getElementById("noakhali-donate").addEventListener("click", function(ev
         const stringDate = currentDate.toString();
         const historyForm = document.getElementById("history-form");
         const divAppend = document.createElement("div");
-        div.classList.add("rounded-xl", "border-1", "p-8");
-        div.innerHTML = `
+        divAppend.classList.add("rounded-xl", "p-8");
+        divAppend.innerHTML = `
             <h3 class="mb-4">${donationAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
             <p>Date: ${stringDate}</p>
         `;
@@ -48,6 +48,16 @@ document.getElementById("feni-donate").addEventListener("click", function(){
         const totalAmountDonated = donationAmount + totalCurrentAmount;
         document.getElementById("current-amount-donated-feni").innerText = totalAmountDonated;
         alert("Donation successful");
+        const currentDate = new Date();
+        const stringDate = currentDate.toString();
+        const historyForm = document.getElementById("history-form");
+        const divAppend = document.createElement("div");
+        divAppend.classList.add("rounded-xl", "p-8");
+        divAppend.innerHTML = `
+            <h3 class="mb-4">${donationAmount} Taka is Donated for Flood Relief at Feni, Bangladesh</h3>
+            <p>Date: ${stringDate}</p>
+        `;
+        historyForm.appendChild(divAppend);
     }
 
     // console.log(balance, donationAmount, totalCurrentAmount);
@@ -70,7 +80,23 @@ document.getElementById("quota-donate").addEventListener("click", function(){
         const totalAmountDonated = donationAmount + totalCurrentAmount;
         document.getElementById("current-amount-donated-quota").innerText = totalAmountDonated;
         alert("Donation successful");
+        const currentDate = new Date();
+        const stringDate = currentDate.toString();
+        const historyForm = document.getElementById("history-form");
+        const divAppend = document.createElement("div");
+        divAppend.classList.add("rounded-xl", "p-8");
+        divAppend.innerHTML = `
+            <h3 class="mb-4">${donationAmount} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh</h3>
+            <p>Date: ${stringDate}</p>
+        `;
+        historyForm.appendChild(divAppend);
     }
 
 
+})
+
+// Blog
+
+document.getElementById("blog-btn").addEventListener("click", function(){
+    window.location.href = "blog.html"
 })
