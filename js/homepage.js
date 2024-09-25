@@ -15,7 +15,7 @@ document.getElementById("noakhali-donate").addEventListener("click", function(ev
     
         const totalAmountDonated = donationAmount + totalCurrentAmount;
         document.getElementById("current-amount-donated-noakhali").innerText = totalAmountDonated;
-        alert("Donation successful");
+        // alert("Donation successful");
 
         const currentDate = new Date();
         const stringDate = currentDate.toString();
@@ -27,6 +27,8 @@ document.getElementById("noakhali-donate").addEventListener("click", function(ev
             <p>Date: ${stringDate}</p>
         `;
         historyForm.appendChild(divAppend);
+
+        document.getElementById("my_modal_1").showModal();
     }
 
 
@@ -47,7 +49,7 @@ document.getElementById("feni-donate").addEventListener("click", function(){
     
         const totalAmountDonated = donationAmount + totalCurrentAmount;
         document.getElementById("current-amount-donated-feni").innerText = totalAmountDonated;
-        alert("Donation successful");
+        // alert("Donation successful");
         const currentDate = new Date();
         const stringDate = currentDate.toString();
         const historyForm = document.getElementById("history-form");
@@ -58,6 +60,7 @@ document.getElementById("feni-donate").addEventListener("click", function(){
             <p>Date: ${stringDate}</p>
         `;
         historyForm.appendChild(divAppend);
+        document.getElementById("my_modal_1").showModal();
     }
 
     // console.log(balance, donationAmount, totalCurrentAmount);
@@ -79,7 +82,7 @@ document.getElementById("quota-donate").addEventListener("click", function(){
     
         const totalAmountDonated = donationAmount + totalCurrentAmount;
         document.getElementById("current-amount-donated-quota").innerText = totalAmountDonated;
-        alert("Donation successful");
+        // alert("Donation successful");
         const currentDate = new Date();
         const stringDate = currentDate.toString();
         const historyForm = document.getElementById("history-form");
@@ -90,6 +93,7 @@ document.getElementById("quota-donate").addEventListener("click", function(){
             <p>Date: ${stringDate}</p>
         `;
         historyForm.appendChild(divAppend);
+        document.getElementById("my_modal_1").showModal();
     }
 
 
@@ -100,3 +104,10 @@ document.getElementById("quota-donate").addEventListener("click", function(){
 document.getElementById("blog-btn").addEventListener("click", function(){
     window.location.href = "blog.html"
 })
+
+// document.getElementById("home-btn").addEventListener("click", function(){
+//     window.location.href = "index.html";
+//     console.log("homebutton clickd");
+// })
+
+

@@ -4,6 +4,7 @@ document.getElementById("history-btn").addEventListener("click", function(){
     document.getElementById("history-form").classList.remove("hidden");
     document.getElementById("donation-button").classList.remove("bg-btn-green");
     document.getElementById("history-btn").classList.add("bg-btn-green");
+    document.getElementById("footer").classList.add("hidden");
 
 })
 
